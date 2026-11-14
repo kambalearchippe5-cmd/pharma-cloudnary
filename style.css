@@ -1,0 +1,119 @@
+:root {
+  --ink: #14263b;
+  --arkipo: #1f8a5b;
+  --victoire: #c9412e;
+  --mist: #eef3f1;
+  --paper: #ffffff;
+  --muted: #55657a;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Public Sans", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--mist);
+  line-height: 1.55;
+}
+
+.wrap { width: min(1100px, 100% - 2rem); margin-inline: auto; }
+
+/* En-tête */
+.hero {
+  background: var(--ink);
+  color: #fff;
+  padding: 2.5rem 0 3rem;
+}
+.hero h1 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  line-height: 1.05;
+  margin: 1rem 0 .75rem;
+  max-width: 16ch;
+}
+.lead { max-width: 52ch; margin: 0; color: #cfd9e4; }
+
+.duo { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: 0; }
+.plus { font-weight: 800; color: #8da2b8; }
+.chip {
+  font-weight: 600;
+  padding: .35rem .8rem;
+  border-radius: 999px;
+  color: #fff;
+}
+.chip-arkipo { background: var(--arkipo); }
+.chip-victoire { background: var(--victoire); }
+
+/* Filtres */
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 .5rem; }
+.filter {
+  font: inherit;
+  font-weight: 600;
+  padding: .55rem 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.filter[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.filter:focus-visible, .card:focus-visible { outline: 3px solid var(--arkipo); outline-offset: 2px; }
+
+.count { color: var(--muted); margin: .5rem 0 1rem; }
+
+/* Grille */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.card {
+  background: var(--paper);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card figure {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  background: #dfe8e4;
+}
+.card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-body { padding: 1rem 1.1rem 1.25rem; display: flex; flex-direction: column; gap: .5rem; }
+.card h2 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .25rem; }
+.tag {
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  color: #fff;
+}
+.tag-arkipo { background: var(--arkipo); }
+.tag-victoire { background: var(--victoire); }
+
+.notice {
+  margin: 2rem 0 0;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--victoire);
+  background: var(--paper);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--muted);
+}
+
+.footer { margin-top: 2.5rem; padding: 1.5rem 0; background: var(--ink); color: #cfd9e4; font-size: .9rem; }
+
+@media (max-width: 480px) {
+  .hero { padding: 1.75rem 0 2.25rem; }
+  .filter { flex: 1 1 auto; text-align: center; }
+}

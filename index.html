@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arkipo × La Victoire – Catalogue de produits pharmaceutiques</title>
+  <meta name="description" content="Produits pharmaceutiques de la pharmacie Arkipo et de la pharmacie La Victoire.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="duo">
+        <span class="chip chip-arkipo">Pharmacie Arkipo</span>
+        <span class="plus" aria-hidden="true">+</span>
+        <span class="chip chip-victoire">Pharmacie La Victoire</span>
+      </p>
+      <h1>Deux pharmacies, un seul catalogue.</h1>
+      <p class="lead">Retrouvez les produits proposés par Arkipo, ceux de La Victoire, et ceux disponibles dans les deux.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="filters" role="group" aria-label="Filtrer par pharmacie">
+      <button class="filter" data-filter="all" aria-pressed="true">Tous</button>
+      <button class="filter" data-filter="arkipo" aria-pressed="false">Arkipo</button>
+      <button class="filter" data-filter="victoire" aria-pressed="false">La Victoire</button>
+      <button class="filter" data-filter="both" aria-pressed="false">Dans les deux</button>
+    </div>
+
+    <p id="count" class="count" aria-live="polite"></p>
+    <section id="grid" class="grid" aria-label="Liste des produits"></section>
+
+    <p class="notice">Ces informations ne remplacent pas l’avis d’un pharmacien. Demandez conseil avant toute utilisation.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Projet de cours – Cloud Computing. Images hébergées sur Cloudinary.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
