@@ -72,7 +72,9 @@ function render(filter = "all") {
 
     card.innerHTML = `
       <figure>
-        <img src="${cloudinaryUrl(p.image)}" alt="${p.title}" loading="lazy" width="600" height="450">
+        <a href="${cloudinaryUrl(p.image)}" target="_blank" rel="noopener" title="Voir l'image sur Cloudinary">
+          <img src="${cloudinaryUrl(p.image)}" alt="${p.title}" loading="lazy" width="600" height="450">
+        </a>
       </figure>
       <div class="card-body">
         <h2>${p.title}</h2>
