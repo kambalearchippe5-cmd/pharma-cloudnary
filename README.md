@@ -19,7 +19,12 @@ Projet réalisé pour le cours de **Cloud Computing**.
   `https://res.cloudinary.com/<cloud_name>/image/upload/f_auto,q_auto,w_600/<public_id>`
 - Les transformations `f_auto` (meilleur format selon le navigateur), `q_auto` (qualité optimisée) et `w_600` (largeur de 600 px) sont appliquées directement par Cloudinary.
 - Seul le cloud name, qui n'est pas secret, apparaît dans le code. L'API secret n'est jamais utilisé ni publié.
+## Exécuter le projet en local
 
+1. Sur la page du dépôt GitHub, cliquer sur le bouton vert « Code », puis sur « Download ZIP ».
+2. Extraire le fichier ZIP dans un dossier de l'ordinateur.
+3. Double-cliquer sur le fichier index.html pour l'ouvrir dans un navigateur.
+4. Une connexion internet est nécessaire, car les images sont chargées depuis Cloudinary.
 
 Lien :https://kambalearchippe5-cmd.github.io/pharma-cloudnary/
 
