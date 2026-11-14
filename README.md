@@ -21,7 +21,7 @@ Projet réalisé pour le cours de **Cloud Computing**.
 - Seul le cloud name, qui n'est pas secret, apparaît dans le code. L'API secret n'est jamais utilisé ni publié.
 
 
-Lien : https://<votre-compte>.github.io/<votre-depot>/
+Lien :https://github.com/kambalearchippe5-cmd/pharma-cloudnary
 
 ## Avertissement
 
